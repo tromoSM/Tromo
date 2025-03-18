@@ -292,6 +292,33 @@ body {
       
            }
      
-    </style>
+   
+html{
+    animation-name: openanimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+        #result { margin-top: 20px; font-weight: 300; }
+        @keyframes openanimation{
+from{
+    filter: blur(20px);
+}
+to{
+    filter: blur(0px);
+}
+}
+</style>
+ 
+<script>
+    const startTime = performance.now(); // Start measuring
+
+    window.onload = function() {
+        const loadTime = (performance.now() - startTime) / 1000; // Convert to seconds
+        const animationDuration = Math.min(Math.max(loadTime, 1), 5); // Clamp between 1s and 5s
+
+        document.documentElement.style.animationDuration = `${animationDuration}s`;
+    };
+</script>
     <p style="font-family:SF Pro;">Report & Feedback : <span style="font-weight:300;">tromosm.report@gmail.com</span></p>
 </html>
