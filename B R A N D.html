@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 999999999;
+            font-family: Meglona;
+            background: rgb(255, 255, 255);
+            font-weight: bold;
+            height: 50px; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+        @supports ((backdrop-filter: blur(15px)) or (-webkit-backdrop-filter: blur(15px))) {
+  header {
+    background: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+  }
+}
+        .top-right-image {
+            width: 38px;
+            transform: translateY(-5px);
+        }
+.hero_img{
+    width: 100vw;transform: translateY(80px);
+               filter: blur(15px);
+               opacity: 0;animation-name: scaleanis;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+
+}
+        h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+         .order:first-child{
+            padding-left: 17px;
+    font-size: medium;
+    padding-right: 17px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 500px;
+    margin-right: 10px;
+    background-color: #ffae00;
+    color: aliceblue;
+    font-family: SF Pro Display ;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+         }
+         .orders{
+            padding-left: 17px;
+    font-size: medium;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 500px;
+    margin-right: 25px;
+    background-color: #0077df00;
+    color: rgb(255, 174, 0);
+    padding-right: 5px;
+    font-family: SF Pro Display ;
+    font-weight: 500;
+
+    outline: none;
+    border: none;
+    text-decoration: wavy solid #ffae00; 
+    padding-top: 6px;
+    padding-bottom: 6px;
+         }
+         .order:hover{
+            background-color: rgb(255, 153, 0);
+         }
+         .orders:hover{ 
+            text-decoration: underline 1px solid rgb(255, 174, 0);;
+         }
+         .button-wrap{
+            display: flex;
+            margin-right: 0px;
+            justify-content: center;
+            align-items: center;
+         }
+         @keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation: slideFade 0.6s ease-out forwards;
+}
+
+         .small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; 
+  margin-top: 50px;  
+  width: 400px;
+  flex-wrap: wrap; transform: translateY(80px);
+               filter: blur(15px);
+               opacity: 0;
+  animation-name: scaleani;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+.small:show{
+    filter: blur(0px);
+                opacity: 1;
+                transform: translateY(0px);
+}
+.button-wrap{
+    animation-name: scaleani;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+
+  
+}
+
+.box {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.6s ease-out;
+      background: white;
+      padding: 50px;
+      margin: 100px auto;
+      max-width: 400px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .box.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+@keyframes scaleani{
+            from{
+               transform: translateY(80px);
+               filter: blur(15px);
+               opacity: 0;
+            }
+       
+            to{ filter: blur(0px);
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }@keyframes scaleanis{
+            from{
+               transform: translateY(10px);
+               filter: blur(15px);
+               opacity: 0;
+            }
+       
+            to{ filter: blur(0px);
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+@media (max-width: 600px) {
+  .image-container {
+    flex-direction: column;
+  }}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Brand</h2>
+        <img class="top-right-image" src="https://github.com/tromoSM/Tromo/blob/main/brand-share.svg?raw=true" alt="logo" />
+    </header>
+    <img src="https://github.com/tromoSM/Tromo/blob/main/brand-hero.png?raw=true" class="hero_img">
+    <div class="button-wrap">
+        <button class="order">Order now</button>
+        <button class="orders">Learn more<span style="font-family: Arrow2use by tromosm;">h</span></button>
+    </div>
+    <div class="button-wrap">
+       
+        <img src="https://github.com/tromoSM/Tromo/blob/main/Brand-small-yellow.png?raw=true" class="small"  style="animation-delay: 0ms;">
+        <img src="https://github.com/tromoSM/Tromo/blob/main/Brand-small-Deluxe.png?raw=true" class="small" style="animation-delay: 100ms;">
+        <img src="https://github.com/tromoSM/Tromo/blob/main/Brand-small-white.png?raw=true" class="small" style="animation-delay: 200ms;"> 
+        <img src="https://github.com/tromoSM/Tromo/blob/main/brand-small-blueX.png?raw=true" class="small"  style="animation-delay: 300ms;">
+    </div>
+
+
+</body>
+</html>
+<script>
+    const boxes = document.querySelectorAll('.small');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    boxes.forEach(box => observer.observe(box));
+  </script>
+
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae dicta architecto hic amet odit nemo at possimus quisquam suscipit illo soluta blanditiis, est eligendi, doloribus natus nulla dignissimos sequi.
+<h2 c></h2>
