@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS with Notepad - Tutorial by ChatGPT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT Logo">
+  </div>
+  <div class="tutorial-box">
+    <h1>Create a CSS File with Notepad</h1>
+    <p>Step 1: Open Notepad</p>
+    <p>Step 2: Type your CSS like this:</p>
+    <pre>
+body {
+  background-color: aliceblue;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* This disables scrolling */
+}
+    </pre>
+    <p>Step 3: Save the file as <code>style.css</code></p>
+    <p>Step 4: Link it in your HTML using:</p>
+    <pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre>
+  </div>
+</body>
+</html>
+<style>
+  /* Disable scrolling */
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: aliceblue;
+  font-family: Arial, sans-serif;
+}
 
+/* Logo in the corner */
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+/* Tutorial content */
+.tutorial-box {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+pre {
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+</style>
