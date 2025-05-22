@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <button onclick="goBack()" class="Nav"><p><span class="arrowuse">f</span>go back</p></button> 
+<body> <div class="wrap-wrap-wrap"><div class="us-wrap-wrap">
+    <div class="tile">
+    <img class="ttile" src="https://images.justwatch.com/poster/323563160/s166/captain-america-new-world-order.avif"></div>
+    <p class="Main-tag">Captain America : Brave new world</p>
+    <p class="Agerate">PG-13</p>    
+</div>
+
+<div class="star-rate-wrap">
+    <img src="favourite.png" class="star-rate">
+    <img src="favourite.png" class="star-rate" id="old">
+    <img src="favourite.png" class="star-rate"id="old">
+    <img src="favourite.png" class="star-rate"id="old">
+    <img src="favourite.png" class="star-rate"id="old">
+    <img src="favourite.png" class="star-rate"id="old">
+    <img src="favourite.png" class="star-rate"id="old">
+    <img src="favourite.png" class="star-rate"id="old">
+    <img src="favourite.png" class="star-rate"id="old">
+    <img src="favourite.png" class="star-rate"id="old">
+</div>
+</div></div>
+</div>
+<div class="rate-wrap-wrap">
+    <li class="d">Disappointment</li>
+    <li>Too many talking,<br></li>
+    <li> less action than an average marvel movie</li>
+    <li>19s vibe</li>
+    <li>bad storyline</li>
+    <li>low quality directing</li>
+    <li>worst captain america movie ever.</li>
+</div>
+<div class="rate-wrap-wrap-i">
+    <div class="for-rate-wrap"><img src="favourite.png" class="star-rate"><p class="for-p"> for sam's acting </p></div>
+</div>
+<a href="https://yts.mx/torrent/download/C554692852DBB5C0DC990822B3ADAF3CBB73BFF3"><button class="down">Download</button></a>
+<a href="https://yts.mx/movies/captain-america-brave-new-world-2025"><button class="yts">Visit YTS</button></a>
+    </body> <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script><script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const guideBtn = document.querySelector('.guide');
+      guideBtn?.addEventListener('click', () => {
+        const rawTitle = document.querySelector('.Main-tag')?.textContent.trim();
+        if (!rawTitle) return;
+    
+        const slug = rawTitle
+          .toLowerCase()
+          .replace(/[^a-z0-9\s-]/g, '')  // keep letters, numbers, spaces, and dashes
+          .replace(/\s+/g, '-')          // replace spaces with hyphens
+          .replace(/-+/g, '-');          // normalize multiple hyphens
+    
+        const url = `https://www.commonsensemedia.org/movie-reviews/${slug}`;
+    
+        window.open(url, '_blank');
+      });
+    });
+    </script>
+    <style>  .logo-g{
+        width: 10px;
+    } .logo-c{
+        width: 15px;
+        transform: translate(-4px,2px);
+    }
+    .guide{
+        color: black;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #33a544;
+        font-weight: 300;
+        transition: 0.3s , 0ms color,0ms background-color ;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 50px;
+        padding: 3px 12px;
+        font-family: SF Pro Display;  
+    }
+    .guide:hover{
+        color: #ffffff;
+        background-color: #33a544;
+        border-radius: 50px;
+        padding: 3px 17px;
+    }
+    .guide:hover .logo-c{
+        filter: brightness(100);
+    }
+        .tile{
+            
+        background-color: #d0372b;
+        }
+       .Nav{
+        outline: none;
+      background-color: #292929b9;
+      backdrop-filter: blur(15px);
+      transform: translateX(-80px);
+      padding-right: 10px;
+        border: none;
+        position: fixed;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .Nav:hover{
+        outline: none;
+      background-color: #00000036;
+      backdrop-filter: blur(5px);
+      transform: translateX(-10px);
+        border: none;
+        position: fixed; 
+    }
+    .arrowuse{
+        font-weight: 1000;
+        font-size: 10px;
+        margin-right: 1px;
+        transform: translateY(10px);
+        height: fit-content;
+        padding-right: 2px;
+
+        font-family: Myfont;
+        
+     }
+    .Nav:hover p{
+        opacity: 1;
+    }
+    .Nav p{
+        opacity: 0;
+        font-size: medium;
+        transition: 0.3s;
+        font-family: SF Pro Display;
+        
+    }
+        .logo-g{
+            width: 10px;
+        }
+        .google{
+            color: black;
+            background-color: black;
+            border: 2px solid #000000;
+            font-weight: 300;
+            transition: 0.3s , 0ms background-color ;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 50px;
+            padding: 3px 12px;
+            font-family: SF Pro Display;  animation-name: colorswao;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-fill-mode: forwards;
+            animation-delay: 0ms;
+        }
+        .google:hover{
+background-color: aliceblue;
+        }
+       .down:hover{
+     letter-spacing: 0.5px;
+       }
+        .down,.yts{
+            color: #d0372b;
+            background-color: transparent;
+            border: 1px solid #d0372b;
+            font-weight: 300;
+            transition: 0.3s ;
+            font-size: medium;
+            cursor: pointer;
+            border-radius: 50px;
+            padding: 3px 12px;
+            font-family: SF Pro Display;
+        }
+        .down:active,.yts:active{
+            scale: 0.8;
+        }
+        .down:hover,.yts:hover{
+            color: #ffffff;
+            background-color: #d0372b;
+            border: 1px solid #d0372b;
+            font-weight: 300;
+            font-size: medium;
+            border-radius: 50px;
+            padding: 3px 17px;
+            font-family: SF Pro Display;
+        }
+        body::selection,p::selection,li::selection{
+            background-color: #d0362b73;
+        }
+        img::selection{
+            filter: saturate(100);
+            background-color: transparent;
+        }
+        .Agerate::selection{
+            background-color: transparent;
+            color: salmon;
+        }
+body{
+    background-color: white;
+}
+      
+.for-rate-wrap{
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            font-family: SF Pro Display;
+        }
+        .d, .d:before{
+            content: none !important; /*thaqt doesnt work*/
+        }
+        .rate-wrap-wrap-i{
+            transform: translate(210px,-210px);
+            background-color: #ececec;
+            width: 40vw;
+            height: fit-content;
+            padding: 5px 25px;
+            border-radius:0px 0px  7px 7px ;
+            margin: 1px 1px 1px 40px; 
+        }
+        .rate-wrap-wrap{
+            transform: translate(210px,-210px);
+            background-color: #ececec;
+            width: 40vw;
+            height: fit-content;
+            padding: 5px 25px;
+            border-radius: 7px 7px 0px 0px;
+            margin-left: 40px;
+            margin: 1px 1px 1px 40px; 
+        }
+        .rate-wrap-wrap li{
+            font-family: SF Pro Display;
+        }
+     
+        #old{
+            opacity: 0.1 !important;
+        }
+       .star-rate-wrap{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+       }
+       .star-rate-wrap:hover #old{
+        scale: 0.8;
+       }
+       .star-rate{
+        opacity: 1;
+        transition: 0.3s;
+        width: 19px;
+        margin-right: 2px;
+       }
+       .star-rate-wrap:hover .star-rate{
+        opacity: 1;
+        width: 19px;
+        transition: 0.2s;
+        filter: contrast(0.1) brightness(0);
+        margin-right: 2px;
+       }
+        .Agerate{
+            background-color: #333;
+            color: aliceblue;
+            font-family: SF Pro Display;
+            padding: 5px 10px;
+            width: fit-content;
+            height: fit-content;
+            border-radius: 7px;
+        }
+        .us-wrap-wrap{
+            display: flex;
+        }
+     
+        .Main-tag{
+            font-family:  Open sans;
+            font-weight: bold;
+            padding-left: 10px;
+            transform: translateY(-10px);
+            font-size: 40px;
+        }
+        .tile{
+        width: fit-content;
+        height: fit-content;
+        }
+        .ttile{
+        width: 15vw;
+        }
+        .span-g-logo{
+            animation-name: colorswa;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-fill-mode: forwards;
+            animation-delay: 0ms;
+        }
+        @keyframes colorswao{
+0%{
+   border: 2px solid #008744 ;
+}
+25%{
+    border: 2px solid #0057e7;
+}
+50%{
+    border: 2px solid #d62d20 ;  
+}
+75%{
+    border: 2px solid #ffa700; 
+}
+100%{
+    border: 2px solid #008744 ;
+}
+        }
+      
+        @keyframes colorswa{
+0%{
+    color: #008744 ;
+}
+25%{
+    color: #0057e7;
+}
+50%{
+  color: #d62d20 ;  
+}
+75%{
+   color: #ffa700; 
+}
+100%{
+    color: #008744 ;
+}
+        }
+    </style>
+</html> <button class="google" onclick="searchMainTag()">
+    <img class="logo-g" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png">    
+    <span class="span-g-logo" style="animation-delay: 0ms;">G</span><span style="animation-delay: 50ms;" class="span-g-logo">o</span><span style="animation-delay: 100ms;" class="span-g-logo">o</span><span style="animation-delay: 150ms;" class="span-g-logo">g</span><span style="animation-delay: 200ms;" class="span-g-logo">l</span><span style="animation-delay: 250ms;" class="span-g-logo">e</span>
+</button>
+<button class="guide">
+    <img class="logo-c" src="IDMB-commensense-logo.png">Parent's Guide
+   </button>
+
+<!-- 
+ 	Hex 	RGB
+	#008744 	
+	#0057e7 	
+	#d62d20 	
+	#ffa700 	
+	#ffffff
+UNDERLINE - MEOMORY
+   .underline{
+            height: 5px;
+            width: 700px;
+            transform: translate(215px,-210px);
+            background-color: #333;
+        } <body> <div class="wrap-wrap-wrap"><div class="us-wrap-wrap">
+    <div class="tile">
+    <img class="ttile" src="https://images.justwatch.com/poster/323563160/s166/captain-america-new-world-order.avif"></div>
+    <p class="Main-tag">Captain America : Brave new world</p>
+    <p class="Agerate">PG-13</p>    
+</div>
+<div class="underline"></div>
+</div>
+      
+        -->
+
+      <script>
+        function searchMainTag() {
+          const tag = document.querySelector('.Main-tag');
+          if (tag) {
+            const query = tag.textContent.trim();
+            if (query) {
+              const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+              window.open(searchUrl, '_blank');
+            } else {
+              alert("Main-tag is empty.");
+            }
+          } else {
+            alert("No .Main-tag found.");
+          }
+        }
+      </script>
+    
+    
