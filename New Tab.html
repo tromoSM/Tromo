@@ -1,0 +1,548 @@
+<!--
+Copyright holder : tromoSM
+Author : tromoSM
+Please credit us if you use this any of your projects @tromoSM
+G-ananlytics : TromoSM-NewTabReplace
+Last Updated on : 2025/05/30 9.12PM
+-->
+<!DOCTYPE html>
+<html>
+    <link rel="icon" type="image/png" href="tromoSM-NO_BG.png">
+<head>
+  <title>tromoSM DEV</title>
+</head>
+  <style>
+    .se, input, button {
+      z-index: 85588888;
+    }
+    .logso:hover {
+         filter: brightness(100)  ;
+      transform: scale(0.9);
+    }
+    .logso-l{
+         filter: brightness(20)  !important ;
+
+    }
+    .trand {
+      transform: translateY(50px);
+    }
+    .important {
+      font-size: 25px;
+    }
+    .words-name {
+      font-family: Roboto Medium,SF Pro,SF Pro Display,Helvetica,Arial;
+      font-weight: normal;
+      color: aliceblue;
+         font-size: 20px;
+      margin-left: 5px;
+    }
+    .flex-comb {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+                 gap: none; 
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      margin: 0;
+      overflow: auto; 
+    }.flex-combs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+                 gap: none; 
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      margin: 0;
+      height: fit-content;
+      overflow: auto; 
+    }
+    .logso {
+      z-index: 5;
+      transition: 0.3s;
+      filter: brightness(1);
+      width: 80px;
+    }
+    .bg-img-l{
+      filter: brightness(1.2) !important;
+    }
+     .bg-img{
+        height: 100vh;
+      filter: brightness(1.1);
+        position: fixed;
+        z-index: -1;  animation-name: sca;
+            animation-fill-mode: forwards;
+                animation-duration:0.8s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+    }
+
+    @keyframes sca{
+        from{
+            scale: 1.3;
+        }
+        to{
+            scale: 1;
+        }
+    }
+    body {
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      overflow-X: hidden;
+    }
+/*
+that search box stylse*/
+    #suggestionBox {
+      position: absolute;
+      background: white;
+      border: 1px solid #ccc;
+      width: 200px;
+      max-height: 150px;
+      overflow-y: auto;
+      display: none;
+      margin-top: 2px;
+      font-family: Arial, sans-serif;
+      color: #333;
+      cursor: pointer;
+      z-index: 9999999;
+    }
+    #suggestionBox div {
+      padding: 6px 10px;
+      border-bottom: 1px solid #eee;      border-radius: 50px;
+
+    }
+    #suggestionBox div:hover {
+      background-color: #f0f0f0;
+    }
+    .se {
+      position: relative; 
+display: flex;
+transform: translateY(70px);
+    }
+    .ui-search {     
+         border-radius: 50px;
+backdrop-filter: blur(15px);
+      width: 400px;
+      outline: none;
+      color: aliceblue;
+      background-color: #33333356;
+      height: fit-content;
+      padding: 13px 15px;
+      font-size: 16px;
+      border: none;
+      font-family: SF Pro Display;
+      box-sizing: border-box;
+      transition: 0.2s;
+    }
+     .ui-search-l{ 
+      background-color: #ffffff6e;
+      color: black;
+         }
+          .ui-search-l:focus,.sea-button-l:active{ 
+      background-color: #ffffff96 !important;
+      color: black;
+         }
+    #searchInput ::placeholder{
+        opacity: 1;
+        font-family: roboto;
+      color: aliceblue;
+    }
+    
+    #searchInput:focus,.sea-button:active{
+backdrop-filter: blur(20px);
+        
+      background-color: rgba(32, 32, 32, 0.506);
+    }
+    .sea-button:active{
+        scale: 0.9;
+    }
+ 
+    button.sea-button {
+      border-radius: 50px;
+      outline: none;
+      width: 36px;
+      height: 36px;
+      border: none;
+      transition: 0.1s;
+      font-size: 18px;
+      transform: translateY(5px);
+backdrop-filter: blur(15px);
+      background-color: #33333356;
+      cursor: pointer;
+    }
+    .sea-button img{
+    width: 24px;
+    transform: translateY(2px);
+    filter: brightness(100) ;
+    }
+    .search-wrp{     
+        padding: 0;
+        height: fit-content;
+    }
+    .tileD{
+       cursor: pointer;
+    border-radius: 15px;
+backdrop-filter: blur(10px);
+      background-color: rgba(70, 70, 70, 0.337);padding: 7px 8px;
+        text-align: center;
+        transition: 0.2s;
+        margin: 20px; animation-name: margd;
+            animation-fill-mode: forwards;
+                animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-delay:  0s;
+            
+            opacity: 0;
+        }
+        @keyframes margd{
+            from{
+              transform: translateY(40px);
+              opacity: 0;
+            }
+            to{
+              opacity: 1;
+              transform: translateY(0px);
+            }
+        }
+   
+    .tileD:hover{
+     scale: 0.9;
+      box-shadow: 0px 0px 20px aliceblue;background-color: rgba(133, 133, 133, 0.337);
+    }    .tileD-l:hover{
+     scale: 0.9;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.507);background-color: rgba(223, 222, 222, 0.432);
+    }
+    .tileD:hover .tileD-img{
+      scale: 1.15;
+    }
+    .tileD:active,.tileD-img:active{
+      scale: 0.9 !important;
+    }
+    .tileD img,#tile-D-replace{
+        transition: 0.2s;
+      border-radius: 50px;
+      width: 45px;
+    transform: translateY(2px);
+    }
+    .tileD-l{
+backdrop-filter: blur(15px);
+      background-color: rgba(255, 255, 255, 0.432);
+    }
+   button.sea-button-l{
+      background-color: #ffffff56;
+    }
+    #TILE_GPT:hover {
+      box-shadow: 0px 0px 20px red;
+      background-color: red;
+    }
+    #TILE_GPT:hover #IMG_GPT{
+       scale: 1.7;
+    }
+    #ENT-CR{
+      filter: contrast(0) brightness(100);
+    }
+    #X-com:hover #ENT-CR{
+      background-color: #ffffff !important;
+       filter: contrast(1) brightness(1);
+       transition: 0.2s background-color,0ms filter;
+    }
+  .btn{
+    z-index: +99;
+    position: fixed;
+  }
+    #GIT:hover  #gitIMG{
+      transition: 0.3s;
+      filter: contrast(0) brightness(100);
+    }
+    #hell:hover #hellimg{
+      background: linear-gradient(90deg,#8120ff,#be8aff) !important;
+    }
+    .btn{
+      backdrop-filter: blur(15px);
+      width: fit-content;
+      background-color: #00000062;
+      outline: none;
+      border: none;
+      transition: 0.3s;
+      border-radius:  0px 8px 8px  0px;animation-name: margds;
+            animation-fill-mode: forwards;
+                animation-duration: 0.6s;
+                cursor: pointer;
+            animation-iteration-count: 1;
+            animation-delay:  0s;
+            
+        }
+        .btn:hover{
+              transform: translateX(0px);
+        }
+        .btn:active{
+          scale: 0.9;
+        }
+        @keyframes margds{
+            from{
+             transform: translateX(-50px);
+            }
+            to{
+              transform: translateX(-5px);
+            }
+        }
+   
+    
+    .btn-l{
+      background-color: #c5c5c562;
+
+    }
+    .toggle{
+      width: 45px;
+    }
+    .toggle-l{
+      filter: brightness(100010)contrast(1) !important ;
+    }
+    .bg-img::selection,.bg-img-l::selection,img::selection,div::selection,p::selection,.tileD-img,span::selection,.logso::selection,.logso-l::selection{
+      background-color: #00000000;
+      
+    }
+    .tileD-img-flat{
+      filter: brightness(1)!important;
+    }
+    .tileD-img-flat-l{
+      filter: brightness(0) !important;
+    }
+    input::selection{
+      background-color: #00000052;
+    }img {
+  user-drag: none;
+  -webkit-user-drag: none; /* Safari support */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+  </style><script>
+  document.querySelectorAll("img").forEach(img => {
+    img.addEventListener("dragstart", e => e.preventDefault());
+  });
+</script>
+
+</head>
+<body>
+
+  <img src="new-tab-img-BG05.jpg" draggable="false" class="bg-img" alt="Background Image">
+  <div class="trand">
+    <div class="flex-comb">
+      <img src="tromoSM-NO_BG.png" class="logso" alt="Logo">
+      <p class="words-name">Tromo<span class="important">SM</span></p>
+    </div>
+  </div>
+<button class="btn" id="btn"><img class="toggle"  draggable="false"  src="hellfire_image_toggle_ios.png"></button>
+<br>
+
+   <div class="trand">
+     <div class="flex-combs">
+    <div class="search-wrp">
+    <input type="text" id="searchInput" placeholder="Search with google" class="ui-search"> 
+    <button class="sea-button" id="searchButton"><img draggable="false"  src="new-tab-img-UI-search-dark.png"></button>
+<div id="suggestionBox"></div>    
+</div></div></div> <br>
+<div class="trand">
+<div class="flex-comb" style="height: fit-content; overflow: hidden;">
+<a href="https://www.chatgpt.com"><div id="GPT-ID" class="tileD">
+<img draggable="false"  id="GPT-IMG" class="tileD-img" src="new-tab-img-Pinned-01.jpg"></div></a><!--ChatGPT Pinned 01-->
+<a href="https://www.speedtest.net/">
+<div class="tileD"><!--speedtrst Pinned 01-->
+  <img  draggable="false" class="tileD-img" src="new-tab-img-Pinned-02.jpg"></div></a>
+  <a href="https://youtube.com">
+  <div id="TILE_GPT" class="tileD"><!--youtube Pinned 01-->
+  <img draggable="false"  id="IMG_GPT" class="tileD-img" src="new-tab-img-Pinned-03.png"></div></a>
+ <a href="https://yts.mx">
+  <div  class="tileD"><!--yts Pinned 01-->
+  <img draggable="false" class="tileD-img" src="new-tab-img-Pinned-04.png"></div></a>
+ <a href="https://github.com/tromoSM/Tromo">
+  <div id="GIT" class="tileD">
+  <img  draggable="false"  id="gitIMG" class="tileD-img" src="new-tab-pinned-05.webp"></div></a>
+ <a href="https://mail.google.com/mail/u/0/#inbox">
+  <div  class="tileD">
+  <img draggable="false"   class="tileD-img" src="new-tab-img-pinned-05.png"></div></a>
+
+   <a href="https://www.instagram.com/">
+  <div  class="tileD">
+  <img  draggable="false"  class="tileD-img" src="new-tab-img-Pinned-06.png"></div></a>
+
+     <a href="https://reddit.com">
+  <div  class="tileD">
+  <img  draggable="false"  class="tileD-img" src="new-tab-pinned-09.png"></div></a>
+<!--Line two da 2-->
+</div></div><div class="trand">
+<div class="flex-comb" style="height: fit-content; overflow: hidden;">
+<a href="https://redketchup.io/image-resizer"><div  class="tileD">
+<img class="tileD-img" src="new-tab-img-Pinned-07.png"></div></a>
+<a href="https://hype4.academy/account/dashboard">
+<div class="tileD">
+  <img class="tileD-img" src="new-tab-img-pinned-08.png"></div></a>
+  <a href="https://x.com">
+  <div class="tileD" id="X-com">
+  <img id="ENT-CR" class="tileD-img" src="new-tab-pinned-10.png"></div></a>
+ <a href="https://www.imdb.com/">
+  <div  class="tileD">
+  <img  class="tileD-img" src="new-tab-pinned-11.png"></div></a>
+ <a href="https://www.remove.bg/upload">
+  <div  class="tileD">
+  <img  class="tileD-img" id="X-com" src="new-tab-pinned-12.png"></div></a>
+ <a href="https://www.justwatch.com/us">
+  <div  class="tileD">
+  <img  class="tileD-img" src="new-tab-pinned-13.png"></div></a>
+
+   <a href="https://www.flaticon.com/">
+  <div  class="tileD">
+  <img id="tile-D-replace"  class="tileD-img-flat" style="filter: brightness(1.5);" src="new-tab-pinned-14.png"></div></a>
+
+     <a href="https://tromosm.github.io/Hellfire/Hellfire_landing_Modern%20BetaTestZ20250329%208.10pm-betaDEVuse">
+  <div  class="tileD" id="hell">
+  <img  class="tileD-img" id="hellimg" src="HellLogoModern.png"></div></a>
+
+</div></div><p style="font-family: SF Pro,SF Pro Display,Arial; transform: translateY(50px); color: white;">Do not share this. this project is under development. confidential</p>
+<!--TROMOSM - NEW TAB REPLACEMENT PROJECT 1.004 attempt-->
+<!--© 2025 - tromoSM-->
+<!--for my future self. dont remove it its not broken just the html tags are removed bc its on dev mode and the google search tag manager is on that too so dont remove it-->
+<!--This script is not being used-->
+<!--this script is used for suggestion and its still on development and the html needed for that JS to work is removed and will be back in  version 1.2-->
+<!--Script by chatGPT 4o-->
+<script>
+  const input = document.getElementById("searchInput");
+  const suggestionBox = document.getElementById("suggestionBox");
+  const searchButton = document.getElementById("searchButton");
+
+  // Function to perform search on Google in a new tab
+  function doSearch() {
+    const query = input.value.trim();
+    if (!query) return;
+    const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+    window.open(url, '_blank');
+  }
+
+  input.addEventListener("input", async () => {
+    const query = input.value.trim();
+    if (!query) {
+      suggestionBox.style.display = "none";
+      suggestionBox.innerHTML = "";
+      return;
+    }
+
+    try {
+      // Fetch from your local server that proxies Google suggestions
+      const res = await fetch(`http://localhost:3000/suggest?q=${encodeURIComponent(query)}`);
+      const data = await res.json();
+      const suggestions = data[1] || [];
+
+      suggestionBox.innerHTML = "";
+      if (suggestions.length > 0) {
+        suggestions.forEach(text => {
+          const div = document.createElement("div");
+          div.textContent = text;
+          div.onclick = () => {
+            input.value = text;
+            suggestionBox.style.display = "none";
+            doSearch();
+          };
+          suggestionBox.appendChild(div);
+        });
+        suggestionBox.style.display = "block";
+      } else {
+        suggestionBox.style.display = "none";
+      }
+    } catch (err) {
+      console.error("Failed to fetch suggestions", err);
+      suggestionBox.style.display = "none";
+    }
+  });
+
+  // Hide suggestions when input loses focus (with small delay to allow click)
+  input.addEventListener("blur", () => {
+    setTimeout(() => {
+      suggestionBox.style.display = "none";
+    }, 200);
+  });
+
+  // Show suggestions if input focused and suggestions exist
+  input.addEventListener("focus", () => {
+    if (suggestionBox.children.length > 0) {
+      suggestionBox.style.display = "block";
+    }
+  });
+
+  // Search when clicking the search button
+  searchButton.addEventListener("click", doSearch);
+
+  // Search when pressing Enter in input
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      suggestionBox.style.display = "none";
+      doSearch();
+    }
+  });
+</script>
+<script>
+let lightMode = false;
+
+document.getElementById('btn').addEventListener('click', () => {
+  lightMode = !lightMode;
+
+  // Loop through all elements in the page
+  document.querySelectorAll('*').forEach(el => {
+    // For each class on this element
+    [...el.classList].forEach(cls => {
+      const lightClass = cls + '-l';
+
+      if (classExists(lightClass)) {
+        if (lightMode) {
+          el.classList.add(lightClass);
+        } else {
+          el.classList.remove(lightClass);
+        }
+      }
+    });
+  });
+});
+
+// Checks if a CSS class is defined
+function classExists(className) {
+  for (const sheet of document.styleSheets) {
+    try {
+      for (const rule of sheet.cssRules || []) {
+        if (rule.selectorText && rule.selectorText.includes(`.${className}`)) {
+          return true;
+        }
+      }
+    } catch (e) {
+      // ignore CORS errors
+    }
+  }
+  return false;
+}
+
+
+</script>
+<script>
+  // Flag to track state
+let isDark = false;
+
+function toggleBrightness() {
+  const elements = document.querySelectorAll(
+    '.tileD-image, .tileD-image-flat, #tileD-image-replacement'
+  );
+
+  elements.forEach(el => {
+    el.style.filter = isDark ? 'brightness(1)' : 'brightness(0)';
+  });
+
+  isDark = !isDark;
+}
+
+// Call this function to toggle
+toggleBrightness();
+
+</script>
+</body>
+</html>
