@@ -1,0 +1,488 @@
+ .projec{
+        max-height: 100px;
+      transition: 0.2s;
+      margin: 10px;
+    }
+    .projec:hover{
+        scale: 1.1;
+        transition: 0.2s;
+        filter: brightness(0.6);
+        margin: 10px;
+    }
+    .projec:active{
+        transition: 0.2s;
+        filter: brightness(0.5);
+        scale: 0.9;
+    }
+    .see:hover .ee{
+       transition: 0.2s;
+        margin-top: 1px;
+    }
+.hellfire{
+    padding-left: 20px;
+    font-size: medium;
+    padding-right: 20px;
+    transition: 0.2s;
+    margin: auto;
+  display: flex;
+  justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    color: #ffffff;
+    font-family: SF Pro Display;   background: linear-gradient(45deg, rgb(255, 102, 0), rgb(255, 0, 212));
+}
+.hellfire:hover{
+    padding-left: 30px;
+    font-size: medium;
+    padding-right: 30px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}     
+.catelina{
+        font-size: medium;
+        background-color:#000000c2;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.3s;
+    margin-right: auto;
+    margin-left: auto;
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    outline:none;
+  border:solid 1px rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    }
+    .catelina:hover{
+        background-color:#000000e3;
+    }
+    .catelina:active{
+        background-color:#000000;
+
+    }
+.see{
+    background-color:#dbdbdb00;
+    padding-left: 15px;
+    font-size: medium;
+    padding-right: 15px;
+    transition: 0.3s;
+    margin-right: auto;
+    margin-left: auto;
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    outline:none;
+  border:solid 1px black;
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+        }
+        
+.see:hover{
+border: 1px solid rgb(39, 39, 39);
+  background-color:rgb(39, 39, 39);
+  color: #ffffff; padding-left: 30px;
+    padding-right: 30px;
+  transition: 0.3s;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    progress{
+       background-color: #ececec;        
+       border-radius: 40px;
+       border: none;
+       outline: none;
+    }
+    .tumblr{  padding-left: 20px;
+    font-size: medium;
+    padding-right: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 5px;
+    border-radius: 50px;
+    padding-bottom: 7px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    transition: none;
+    font-family: SF Pro Display;
+    background-color: #000000;
+    }
+    .tumblr:hover{
+        background-color: #0c0c0c;
+        
+    }
+    .rate{
+        width: 25px;
+        margin-right: 2px;
+        height: auto;
+        transition: 0.2s;
+        margin-top:15px;
+    }
+    .rate:hover{
+        filter: brightness(0.3);
+        transition: 0.2s;
+        scale: 1.1;
+    }
+    .ratee:hover{
+        filter: brightness(0.9);
+        transition: 0.3s;
+    }
+    .ratee{
+        width: 25px;
+        filter: brightness(2.5);
+        height: auto;
+        margin-right: 2px;
+    }
+    .insta{
+        font-size: medium;
+        padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+
+    border-radius: 50px;
+    outline: none;
+    color: #ffffff;
+    font-family: SF Pro Display;
+        background: linear-gradient(100deg,  rgb(131, 56, 236) , rgb(255, 0, 110), rgb(255, 190, 11), rgb(251, 86, 7));
+    }
+    .insta:hover{
+        filter: brightness(1.2) saturate(0.9);
+    }
+    .tumblr:active{
+        background-color: #272727;}
+    .buttons{
+        display: flex;
+      flex-wrap: wrap;
+      justify-content: center; 
+      align-items: center; 
+      gap: 5px;
+    }
+    .betterCatelina{
+        padding-left: 20px;
+    font-size: medium;
+    padding-right: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    color: #232574; 
+    border: 2px solid #232574; 
+    font-family: SF Pro Display;
+    }
+    .Hellfire_button_modern{
+        background: linear-gradient(100deg,rgb(140, 18, 255) , rgb(204, 149, 255));
+        padding-left: 20px;
+    font-size: medium;
+    padding-right: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+        filter: hue-rotate(355deg);
+        padding-bottom: 5px;
+    font-family: SF Pro Display;
+    border: none;    color: whitesmoke;
+
+    border-radius: 50px;
+    outline: none;
+    }
+    .Hellfire_button{
+        background: linear-gradient(100deg,rgb(255, 18, 156) , rgb(235, 86, 0));
+        padding-left: 20px;
+    font-size: medium;
+    padding-right: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+        filter: hue-rotate(355deg);
+        padding-bottom: 5px;
+    font-family: SF Pro Display;
+    border: none;    color: whitesmoke;
+
+    border-radius: 50px;
+    outline: none;
+    }
+    .portFolio{
+        background: linear-gradient(100deg,rgb(255, 0, 98) , rgb(255, 145, 2));
+        padding-left: 20px;
+    font-size: medium;
+    padding-right: 20px;
+    transition: 2s;
+    cursor: pointer;
+    padding-top: 5px;
+
+        filter: hue-rotate(5deg);
+        padding-bottom: 5px;
+    font-family: SF Pro Display;
+    border: none;    color: whitesmoke;
+
+    border-radius: 50px;
+    outline: none;
+    }
+    .portFolio:hover
+    {
+        filter: hue-rotate(360deg);
+        transition: 5s;
+
+    }
+    .Hellfire_button:hover{
+
+        filter: hue-rotate(340deg) saturate(1.5);
+    }
+    .Hellfire_button_modern:hover{
+        filter: hue-rotate(340deg) saturate(1.5);
+    }
+    .betterCatelina:hover{
+   background-color: #232574;
+   color: white;
+
+    }
+ .FontSpace{  padding-left: 20px;
+    font-size: medium;
+    padding-right: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    color: #ffffff;
+    font-family: SF Pro Display;
+  background:linear-gradient(135deg, #23DBF9 , #FF64BD )
+}
+.FontSpace:hover{
+
+        filter: brightness(0.9) saturate(2) hue-rotate(50deg);
+}
+.codepen{
+    padding-left: 20px;
+    font-size: medium;
+    padding-right: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    border-bottom: 0px solid#000000 ;
+    border-top: solid 2px #000000;
+    border-left: solid 2px #000000;
+    border-right: solid 2px #000000; border-radius: 2px;
+    outline: none;
+    color: #ffffff;
+    transition: none;
+    font-family: SF Pro Display;
+    background-color: #000000;
+}
+.codepen:hover{
+    transition: none;
+    border-bottom: 2px solid#ffffff ;
+    
+    padding-bottom: 5px;
+}
+.soundcloud:hover{
+    background-color: #ffffff;
+  color:#ff3300;
+  transition: 0ms;
+}
+.soundcloud{
+    padding-left: 15px;
+    font-size: medium;
+    padding-right: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: SF Pro Display;
+  background-color:#ff3300;
+}
+.fiverr{
+        padding-left: 15px;
+    font-size: medium;
+    padding-right: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    border: solid 1px #000000;
+    outline: none;
+    color: #000000;
+    font-family: SF Pro Display;
+  background-color:#eee;
+    }
+    .fiverr:hover{
+        background-color:#000000;
+        color: white;
+    }
+.Devto{
+    background-color: #ffffff;
+    padding-left: 15px;
+    font-size: medium;
+    padding-right: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    border: solid 1px  #3B49DF;
+    outline: none;
+    color: #3B49DF;
+    font-family: SF Pro Display;
+    transition: none;
+}
+.Devto:hover{
+    background-color: #3B49DF;
+    color: white;
+    transition: none;
+}
+    .github{
+        padding-left: 15px;
+    font-size: medium;
+    padding-right: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    border: solid 1px #DBDFE7;
+    outline: none;
+    color: #000000;
+    font-family: SF Pro Display;
+  background-color:#eee;
+    }
+    .github:hover, .github:active{
+    border: solid 1px #929292;
+    background-color:rgb(209, 209, 209);
+    }
+    .SquarePlanet{
+        background-color: #ffffff;
+    padding-left: 15px;
+    font-size: medium;
+    padding-right: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    border: solid 1px #DBDFE7;
+    outline: none;
+    color: #27374C;
+    font-family: SF Pro Display;
+    }
+    .X{
+        background-color: #000000;     
+    padding-left: 15px;
+    font-size: medium;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 50px;
+    border: solid 1px #000000;
+    outline: none;
+    color: #ffffff;
+    font-family: SF Pro Display;
+    }
+    .X:hover{
+        padding:  2px 20px 2px 20px;
+    }
+    .X_img{
+        width: 18px;
+        transform: translateY(2px);
+        transition: 0.3s;
+        margin: 0px;
+        filter: brightness(10000) contrast(10000) drop-shadow(0px 0px 5px white) invert(100);
+    }
+    .X:hover .X_img{
+        filter:drop-shadow(0px 0px 5px white) invert(100);
+        
+
+    }
+    .SquarePlanet:hover{
+        background-color: #DBDFE7;
+    }     .yt{
+    background-color: #272727;
+    border: none;
+    padding-left: 15px;
+    font-size: medium;
+    padding-right: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+}
+.workspace:hover{
+    
+    background-color: #ffffff;
+            transition: 0.3s;
+            border: solid 1px #cecece;
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0px 0px 40px #8d8d8dbd;
+}
+.yt:hover{
+    background-color: #3F3F3F;
+    transition: 0.3s;
+    color: aliceblue;
+}
+.yt:active{
+    background-color: #535353;
+}
+    .pixabay{
+        background-color: #00AB6B;
+    padding-left: 15px;
+    font-size: medium;
+    padding-right: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    font-family: SF Pro Display;
+    }
+    .pixabay:hover{
+        background-color: #14BC7D;
+        transition: 0.2s;
+    }
+    .pixabay:active{
+        background-color: #06885A;
+    }
+    .profile:hover{
+        filter:  brightness(2);
+        border-radius: 50px;
+        background-color: #8b8b8b;
+
+    }
