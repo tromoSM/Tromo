@@ -1,23 +1,4 @@
- .projec{
-        max-height: 100px;
-      transition: 0.2s;
-      margin: 10px;
-    }
-    .projec:hover{
-        scale: 1.1;
-        transition: 0.2s;
-        filter: brightness(0.6);
-        margin: 10px;
-    }
-    .projec:active{
-        transition: 0.2s;
-        filter: brightness(0.5);
-        scale: 0.9;
-    }
-    .see:hover .ee{
-       transition: 0.2s;
-        margin-top: 1px;
-    }
+
 .hellfire{
     padding-left: 20px;
     font-size: medium;
@@ -68,42 +49,7 @@
         background-color:#000000;
 
     }
-.see{
-    background-color:#dbdbdb00;
-    padding-left: 15px;
-    font-size: medium;
-    padding-right: 15px;
-    transition: 0.3s;
-    margin-right: auto;
-    margin-left: auto;
-  display: flex;
-  margin-top: 5px;
-  justify-content: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 50px;
-    outline:none;
-  border:solid 1px black;
-    color: rgb(0, 0, 0);
-    font-family: SF Pro Display;
-        }
         
-.see:hover{
-border: 1px solid rgb(39, 39, 39);
-  background-color:rgb(39, 39, 39);
-  color: #ffffff; padding-left: 30px;
-    padding-right: 30px;
-  transition: 0.3s;
-        }
-        html{
-            scroll-behavior: smooth;
-        }
-    progress{
-       background-color: #ececec;        
-       border-radius: 40px;
-       border: none;
-       outline: none;
-    }
     .tumblr{  padding-left: 20px;
     font-size: medium;
     padding-right: 20px;
@@ -125,28 +71,7 @@ border: 1px solid rgb(39, 39, 39);
         background-color: #0c0c0c;
         
     }
-    .rate{
-        width: 25px;
-        margin-right: 2px;
-        height: auto;
-        transition: 0.2s;
-        margin-top:15px;
-    }
-    .rate:hover{
-        filter: brightness(0.3);
-        transition: 0.2s;
-        scale: 1.1;
-    }
-    .ratee:hover{
-        filter: brightness(0.9);
-        transition: 0.3s;
-    }
-    .ratee{
-        width: 25px;
-        filter: brightness(2.5);
-        height: auto;
-        margin-right: 2px;
-    }
+   
     .insta{
         font-size: medium;
         padding-left: 20px;
@@ -168,13 +93,7 @@ border: 1px solid rgb(39, 39, 39);
     }
     .tumblr:active{
         background-color: #272727;}
-    .buttons{
-        display: flex;
-      flex-wrap: wrap;
-      justify-content: center; 
-      align-items: center; 
-      gap: 5px;
-    }
+    
     .betterCatelina{
         padding-left: 20px;
     font-size: medium;
@@ -480,9 +399,4 @@ border: 1px solid rgb(39, 39, 39);
     .pixabay:active{
         background-color: #06885A;
     }
-    .profile:hover{
-        filter:  brightness(2);
-        border-radius: 50px;
-        background-color: #8b8b8b;
-
-    }
+  
