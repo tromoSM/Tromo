@@ -1,0 +1,3 @@
+||instagram.com/api/v1/mental_well_being/get_daily_limit_settings$important
+||instagram.com/api/v1/mental_well_being/get_aggregated_screen_time_by_device$important
+||instagram.com/api/v1/mental_well_being/update_screen_time$important
