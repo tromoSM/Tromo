@@ -1,0 +1,15 @@
+settings_home="ms-settings:"
+settings_about='ms-settings:about'
+settings_system='ms-settings:system'
+settings_display='ms-settings:display'
+settings_multitasking='ms-settings:multitasking'
+settings_clipboard='ms-settings:clipboard'
+settings_remoteDesktop='ms-settings:remote-desktop'
+settings_personalization="ms-settings:personalization"
+settings_network="ms-settings:network"
+settings_network_wifi="ms-settings:network-wifi"
+settings_apps='ms-settings:appsfeatures'
+settings_privacy='ms-settings:privacy'
+settings_defender="ms-settings:windowsdefender"
+settings_security='ms-settings:windowssecurity'
+settings_update='ms-settings:windowsupdate'
